@@ -6,6 +6,8 @@
     <content><![CDATA[<p>// 查看当前代理设置</p>
 <p>git config –global http.proxy</p>
 <p>// 设置当前代理为 <a href="http://127.0.0.1:1080" target="_blank" rel="noopener">http://127.0.0.1:1080</a> 或 socket5://127.0.0.1:1080</p>
+<a id="more"></a>
+
 <p>git config –global http.proxy ‘<a href="http://127.0.0.1:1080&#39;" target="_blank" rel="noopener">http://127.0.0.1:1080&#39;</a></p>
 <p>git config –global https.proxy ‘<a href="http://127.0.0.1:1080&#39;" target="_blank" rel="noopener">http://127.0.0.1:1080&#39;</a></p>
 <p>git config –global http.proxy ‘socks5://127.0.0.1:1080’</p>
@@ -28,6 +30,7 @@
 <li><p>确保node版本大于6.2</p>
 </li>
 <li><p>在博客根目录（注意不是yilia根目录）执行以下命令：<code>npm install hexo-generator-json-content --save</code></p>
+<a id="more"></a>
 </li>
 <li><p>在hexo的blog根目录<code>_config.yml</code>里添加配置（保持格式，不要改动任何空格缩进），关掉<code>hexo s</code>之后执行<code>hexo g</code>重新生成：</p>
 </li>
