@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>泪~已搁浅</title>
+  
+  
+  <link href="/blogs/atom.xml" rel="self"/>
+  
+  <link href="https://github.com/longju-dev/blogs/"/>
+  <updated>2019-11-03T02:47:22.128Z</updated>
+  <id>https://github.com/longju-dev/blogs/</id>
+  
+  <author>
+    <name>泪~已搁浅</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>git 设置代理</title>
+    <link href="https://github.com/longju-dev/blogs/2017/11/03/suibi2/"/>
+    <id>https://github.com/longju-dev/blogs/2017/11/03/suibi2/</id>
+    <published>2017-11-03T02:43:01.000Z</published>
+    <updated>2019-11-03T02:47:22.128Z</updated>
+    
+    <content type="html"><![CDATA[<p>// 查看当前代理设置</p><p>git config –global http.proxy</p><p>// 设置当前代理为 <a href="http://127.0.0.1:1080" target="_blank" rel="noopener">http://127.0.0.1:1080</a> 或 socket5://127.0.0.1:1080</p><p>git config –global http.proxy ‘<a href="http://127.0.0.1:1080&#39;" target="_blank" rel="noopener">http://127.0.0.1:1080&#39;</a></p><p>git config –global https.proxy ‘<a href="http://127.0.0.1:1080&#39;" target="_blank" rel="noopener">http://127.0.0.1:1080&#39;</a></p><p>git config –global http.proxy ‘socks5://127.0.0.1:1080’</p><p>git config –global https.proxy ‘socks5://127.0.0.1:1080’ /</p><p>/ 删除代理</p><p>git config –global –unset https.proxy</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;// 查看当前代理设置&lt;/p&gt;
+&lt;p&gt;git config –global http.proxy&lt;/p&gt;
+&lt;p&gt;// 设置当前代理为 &lt;a href=&quot;http://127.0.0.1:1080&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://
+      
+    
+    </summary>
+    
+    
+      <category term="随笔" scheme="https://github.com/longju-dev/blogs/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+      <category term="git" scheme="https://github.com/longju-dev/blogs/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo yilia 点击所有文章提示缺失模块</title>
+    <link href="https://github.com/longju-dev/blogs/2017/11/02/shuibi/"/>
+    <id>https://github.com/longju-dev/blogs/2017/11/02/shuibi/</id>
+    <published>2017-11-02T13:50:46.000Z</published>
+    <updated>2019-11-03T02:18:24.138Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p> 点击<code>所有文章</code>提示缺失模块 </p><h2 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h2><ul><li><p>确保node版本大于6.2</p></li><li><p>在博客根目录（注意不是yilia根目录）执行以下命令：<code>npm install hexo-generator-json-content --save</code></p></li><li><p>在hexo的blog根目录<code>_config.yml</code>里添加配置（保持格式，不要改动任何空格缩进），关掉<code>hexo s</code>之后执行<code>hexo g</code>重新生成：</p></li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">jsonContent:</span><br><span class="line">  meta: false</span><br><span class="line">  pages: false</span><br><span class="line">  posts:</span><br><span class="line">    title: true</span><br><span class="line">    date: true</span><br><span class="line">    path: true</span><br><span class="line">    text: false</span><br><span class="line">    raw: false</span><br><span class="line">    content: false</span><br><span class="line">    slug: false</span><br><span class="line">    updated: false</span><br><span class="line">    comments: false</span><br><span class="line">    link: false</span><br><span class="line">    permalink: false</span><br><span class="line">    excerpt: false</span><br><span class="line">    categories: false</span><br><span class="line">    tags: true</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;问题&quot;&gt;&lt;a href=&quot;#问题&quot; class=&quot;headerlink&quot; title=&quot;问题&quot;&gt;&lt;/a&gt;问题&lt;/h2&gt;&lt;p&gt; 点击&lt;code&gt;所有文章&lt;/code&gt;提示缺失模块 &lt;/p&gt;
+&lt;h2 id=&quot;解决办法&quot;&gt;&lt;a href=&quot;#解决办法&quot; class=&quot;h
+      
+    
+    </summary>
+    
+    
+      <category term="随笔" scheme="https://github.com/longju-dev/blogs/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+      <category term="Hexo" scheme="https://github.com/longju-dev/blogs/tags/Hexo/"/>
+    
+      <category term="yilia" scheme="https://github.com/longju-dev/blogs/tags/yilia/"/>
+    
+  </entry>
+  
+</feed>
