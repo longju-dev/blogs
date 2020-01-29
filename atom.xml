@@ -6,7 +6,7 @@
   <link href="/blogs/atom.xml" rel="self"/>
   
   <link href="https://github.com/longju-dev/blogs/"/>
-  <updated>2019-11-03T04:00:43.292Z</updated>
+  <updated>2020-01-29T08:04:55.128Z</updated>
   <id>https://github.com/longju-dev/blogs/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>vmware虚拟机安装 Android x86</title>
+    <link href="https://github.com/longju-dev/blogs/2020/01/29/postName/"/>
+    <id>https://github.com/longju-dev/blogs/2020/01/29/postName/</id>
+    <published>2020-01-29T07:06:35.000Z</published>
+    <updated>2020-01-29T08:04:55.128Z</updated>
+    
+    <content type="html"><![CDATA[<p>首先先安装 VMware 虚拟机，并下载 android-x86_64-8.1-r2.iso 系统。</p><p>VMware安装完成后，打开VMware Workstation，单击“创建新的虚拟机”，或者在菜单栏点击文件“文件”选择“新建虚拟机”，还可以用快捷键“Ctrl+N”来创建。</p><p><img src="/blogs/longju-dev/blogs/2020/01/29/postName/GitHub/blogs1/source/_posts/postName/20190919134702997.png" alt="img"></p><p> 下一步，并选择ISO系统文件 </p><p><img src="/blogs/longju-dev/blogs/2020/01/29/postName/GitHub/blogs1/source/_posts/postName/20190919134756144.png" alt="img"></p><p> 下一步，设置虚拟机名称及位置 </p><p><img src="/blogs/longju-dev/blogs/2020/01/29/postName/GitHub/blogs1/source/_posts/postName/20190919134840107.png" alt="img"></p><p>下一步，设置磁盘容量</p><p> <img src="/blogs/longju-dev/blogs/2020/01/29/postName/GitHub/blogs1/source/_posts/postName/20190919134857775.png" alt="img"> </p><p>下一步，创建完成</p><p><img src="/blogs/longju-dev/blogs/2020/01/29/postName/GitHub/blogs1/source/_posts/postName/20190919134913849.png" alt="img"></p><p>创建完成后默认配置如下：</p><p><img src="/blogs/longju-dev/blogs/2020/01/29/postName/GitHub/blogs1/source/_posts/postName/20190919134934681.png" alt="img"></p><p>如有需要可以自行调整。完成以后，启动虚拟机。</p><p>启动后会显!示此页面，选择第三个（如果显示的页面有所不同，请根据内容做判断）</p><p><img src="/blogs/longju-dev/blogs/2020/01/29/postName/GitHub/blogs1/source/_posts/postName/20190919140420307.png" alt="img"></p><p>选择第一项回车，如图：</p><p><img src="/blogs/longju-dev/blogs/2020/01/29/postName/GitHub/blogs1/source/_posts/postName/20190919141055381.png" alt="img"></p><p>选择NO回车</p><p><img src="/blogs/longju-dev/blogs/2020/01/29/postName/GitHub/blogs1/source/_posts/postName/20190919141200183.png" alt="img"></p><p>选择NEW回车</p><p><img src="/blogs/longju-dev/blogs/2020/01/29/postName/GitHub/blogs1/source/_posts/postName/20190919141244387.png" alt="img"></p><p>选择Primary在回车</p><p><img src="/blogs/longju-dev/blogs/2020/01/29/postName/GitHub/blogs1/source/_posts/postName/20190919141313168.png" alt="img"></p><p>保持默认直接回车</p><p><img src="/blogs/longju-dev/blogs/2020/01/29/postName/GitHub/blogs1/source/_posts/postName/20190919141347389.png" alt="img"></p><p>新建了主分区后需要激活分区才能启动，也就是写磁盘引导信息，选择“Bootable”然后回车。“sda1”的Flags就是“Boot”。</p><p><img src="/blogs/longju-dev/blogs/2020/01/29/postName/GitHub/blogs1/source/_posts/postName/20190919141517271.png" alt="img"></p><p>选择Write在回车</p><p><img src="/blogs/longju-dev/blogs/2020/01/29/postName/GitHub/blogs1/source/_posts/postName/20190919141558843.png" alt="img"></p><p>输入yes在回车</p><p><img src="/blogs/longju-dev/blogs/2020/01/29/postName/GitHub/blogs1/source/_posts/postName/20190919141622956.png" alt="img"></p><p>然后选中“Quit”然后回车，退出分区</p><p><img src="/blogs/longju-dev/blogs/2020/01/29/postName/GitHub/blogs1/source/_posts/postName/20190919141644934.png" alt="img"></p><p>选择 “sda1”,即第一块硬盘的第一个分区，然后用“Tab”键选中“OK” 后回车</p><p><img src="/blogs/longju-dev/blogs/2020/01/29/postName/GitHub/blogs1/source/_posts/postName/20190919141719106.png" alt="img"></p><p>这一步安装程序要我们选择要格式化的文件系统类型，选择ETX4，选OK回车下一步</p><p><img src="/blogs/longju-dev/blogs/2020/01/29/postName/GitHub/blogs1/source/_posts/postName/20190919141739235.png" alt="img"></p><p>选择Yes，回车</p><p><img src="/blogs/longju-dev/blogs/2020/01/29/postName/GitHub/blogs1/source/_posts/postName/20190919141801192.png" alt="img"></p><p>选择Yes，回车</p><p><img src="/blogs/longju-dev/blogs/2020/01/29/postName/GitHub/blogs1/source/_posts/postName/20190919141821399.png" alt="img"></p><p>选择Yes，回车</p><p><img src="/blogs/longju-dev/blogs/2020/01/29/postName/GitHub/blogs1/source/_posts/postName/20190919141842308.png" alt="img"></p><p>接下来会自动安装系统，直到安装完成，我们选择重启即可</p><p><img src="/blogs/longju-dev/blogs/2020/01/29/postName/GitHub/blogs1/source/_posts/postName/20190919141900945.png" alt="img"></p><p>其实系统已经安装完成，但是我们发现重启之后是进不了系统的，出现黑屏，或者以下这种提示</p><p><img src="/blogs/longju-dev/blogs/2020/01/29/postName/GitHub/blogs1/source/_posts/postName/20190919141922907.png" alt="img"></p><p>所以我们还需要进一步设置，需要先关闭虚拟机，之后在开机，开机选择第二项回车，进入debug模式</p><p><img src="/blogs/longju-dev/blogs/2020/01/29/postName/GitHub/blogs1/source/_posts/postName/20190919141957658.png" alt="img"></p><p>回车输入才下命令，以 RW 模式重新挂载分区</p><p>mount -o remount,rw /mnt</p><p><img src="/blogs/longju-dev/blogs/2020/01/29/postName/GitHub/blogs1/source/_posts/postName/20190919142150723.png" alt="img"></p><p>编辑文件：</p><p>vi /mnt/grub/menu.lst</p><p><img src="/blogs/longju-dev/blogs/2020/01/29/postName/GitHub/blogs1/source/_posts/postName/20190919142258115.png" alt="img"></p><p>按i，进入编辑模式，在第一个启动项，quiet后面加入nomodeset，如图：</p><p><img src="/blogs/longju-dev/blogs/2020/01/29/postName/GitHub/blogs1/source/_posts/postName/2019091914232413.png" alt="img"></p><p>nomodeset不加载任何显卡驱动模式</p><p>按esc键取消编辑模式，输入：wq回车保存并退出，重启虚拟机即可。</p><p>重启之后就可以进入系统了。</p><p>提示：<br>如果安装app后闪退，在虚拟机的终端中运行enable_houdini命令。</p><p>Vim复制一整行和复制多行<br>1、复制<br>1）单行复制，在命令模式下，将光标移动到将要复制的行处，按“yy”进行复制；<br>2）多行复制，在命令模式下，将光标移动到将要复制的首行处，按“nyy”复制n行；其中n为1、2、3……</p><p>2、粘贴<br>在命令模式下，将光标移动到将要粘贴的行处，按“p”进行粘贴</p><p>3、删除<br>在命令模式下，将光标移动到将要删除的行处，按“dd”进行删除</p><p>———————————<br>相互学习，共同进步<br>如有不足请留言指正</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;首先先安装 VMware 虚拟机，并下载 android-x86_64-8.1-r2.iso 系统。&lt;/p&gt;
+&lt;p&gt;VMware安装完成后，打开VMware Workstation，单击“创建新的虚拟机”，或者在菜单栏点击文件“文件”选择“新建虚拟机”，还可以用快捷键“Ct
+      
+    
+    </summary>
+    
+    
+      <category term="随笔" scheme="https://github.com/longju-dev/blogs/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+      <category term="vmware" scheme="https://github.com/longju-dev/blogs/tags/vmware/"/>
+    
+      <category term="Android x86" scheme="https://github.com/longju-dev/blogs/tags/Android-x86/"/>
+    
+  </entry>
   
   <entry>
     <title>git 设置代理</title>
@@ -46,7 +75,7 @@
     <link href="https://github.com/longju-dev/blogs/2017/11/02/shuibi/"/>
     <id>https://github.com/longju-dev/blogs/2017/11/02/shuibi/</id>
     <published>2017-11-02T13:50:46.000Z</published>
-    <updated>2019-11-03T04:00:48.129Z</updated>
+    <updated>2020-01-29T08:23:24.796Z</updated>
     
     <content type="html"><![CDATA[<h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p> 点击<code>所有文章</code>提示缺失模块 </p><h2 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h2><ul><li><p>确保node版本大于6.2</p></li><li><p>在博客根目录（注意不是yilia根目录）执行以下命令：<code>npm install hexo-generator-json-content --save</code></p><a id="more"></a></li><li><p>在hexo的blog根目录<code>_config.yml</code>里添加配置（保持格式，不要改动任何空格缩进），关掉<code>hexo s</code>之后执行<code>hexo g</code>重新生成：</p></li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">jsonContent:</span><br><span class="line">  meta: false</span><br><span class="line">  pages: false</span><br><span class="line">  posts:</span><br><span class="line">    title: true</span><br><span class="line">    date: true</span><br><span class="line">    path: true</span><br><span class="line">    text: false</span><br><span class="line">    raw: false</span><br><span class="line">    content: false</span><br><span class="line">    slug: false</span><br><span class="line">    updated: false</span><br><span class="line">    comments: false</span><br><span class="line">    link: false</span><br><span class="line">    permalink: false</span><br><span class="line">    excerpt: false</span><br><span class="line">    categories: false</span><br><span class="line">    tags: true</span><br></pre></td></tr></table></figure>]]></content>
     
@@ -56,7 +85,7 @@
 &lt;h2 id=&quot;解决办法&quot;&gt;&lt;a href=&quot;#解决办法&quot; class=&quot;headerlink&quot; title=&quot;解决办法&quot;&gt;&lt;/a&gt;解决办法&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;确保node版本大于6.2&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;在博客根目录（注意不是yilia根目录）执行以下命令：&lt;code&gt;npm install hexo-generator-json-content --save&lt;/code&gt;&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;在博客根目录（注意不是yilia根目录）执行以下命令：&lt;code&gt;npm install hexo-generator-json-content --save&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;
     
     </summary>
     
