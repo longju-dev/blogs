@@ -5,62 +5,64 @@
     <url>/blogs/2020/01/29/postName/</url>
     <content><![CDATA[<p>首先先安装 VMware 虚拟机，并下载 android-x86_64-8.1-r2.iso 系统。</p>
 <p>VMware安装完成后，打开VMware Workstation，单击“创建新的虚拟机”，或者在菜单栏点击文件“文件”选择“新建虚拟机”，还可以用快捷键“Ctrl+N”来创建。</p>
-<p><img src="/blogs/longju-dev/blogs/2020/01/29/postName/GitHub/blogs1/source/_posts/postName/20190919134702997.png" alt="img"></p>
+<a id="more"></a>
+
+<p><img src="/blogs/longju-dev/blogs/2020/01/29/postName/20190919134702997.png" alt="img"></p>
 <p> 下一步，并选择ISO系统文件 </p>
-<p><img src="/blogs/longju-dev/blogs/2020/01/29/postName/GitHub/blogs1/source/_posts/postName/20190919134756144.png" alt="img"></p>
+<p><img src="/blogs/longju-dev/blogs/2020/01/29/postName/20190919134756144.png" alt="img"></p>
 <p> 下一步，设置虚拟机名称及位置 </p>
-<p><img src="/blogs/longju-dev/blogs/2020/01/29/postName/GitHub/blogs1/source/_posts/postName/20190919134840107.png" alt="img"></p>
+<p><img src="/blogs/longju-dev/blogs/2020/01/29/postName/20190919134840107.png" alt="img"></p>
 <p>下一步，设置磁盘容量</p>
-<p> <img src="/blogs/longju-dev/blogs/2020/01/29/postName/GitHub/blogs1/source/_posts/postName/20190919134857775.png" alt="img"> </p>
+<p> <img src="/blogs/longju-dev/blogs/2020/01/29/postName/20190919134857775.png" alt="img"> </p>
 <p>下一步，创建完成</p>
-<p><img src="/blogs/longju-dev/blogs/2020/01/29/postName/GitHub/blogs1/source/_posts/postName/20190919134913849.png" alt="img"></p>
+<p><img src="/blogs/longju-dev/blogs/2020/01/29/postName/20190919134913849.png" alt="img"></p>
 <p>创建完成后默认配置如下：</p>
-<p><img src="/blogs/longju-dev/blogs/2020/01/29/postName/GitHub/blogs1/source/_posts/postName/20190919134934681.png" alt="img"></p>
+<p><img src="/blogs/longju-dev/blogs/2020/01/29/postName/20190919134934681.png" alt="img"></p>
 <p>如有需要可以自行调整。完成以后，启动虚拟机。</p>
 <p>启动后会显!示此页面，选择第三个（如果显示的页面有所不同，请根据内容做判断）</p>
-<p><img src="/blogs/longju-dev/blogs/2020/01/29/postName/GitHub/blogs1/source/_posts/postName/20190919140420307.png" alt="img"></p>
+<p><img src="/blogs/longju-dev/blogs/2020/01/29/postName/20190919140420307.png" alt="img"></p>
 <p>选择第一项回车，如图：</p>
-<p><img src="/blogs/longju-dev/blogs/2020/01/29/postName/GitHub/blogs1/source/_posts/postName/20190919141055381.png" alt="img"></p>
+<p><img src="/blogs/longju-dev/blogs/2020/01/29/postName/20190919141055381.png" alt="img"></p>
 <p>选择NO回车</p>
-<p><img src="/blogs/longju-dev/blogs/2020/01/29/postName/GitHub/blogs1/source/_posts/postName/20190919141200183.png" alt="img"></p>
+<p><img src="/blogs/longju-dev/blogs/2020/01/29/postName/20190919141200183.png" alt="img"></p>
 <p>选择NEW回车</p>
-<p><img src="/blogs/longju-dev/blogs/2020/01/29/postName/GitHub/blogs1/source/_posts/postName/20190919141244387.png" alt="img"></p>
+<p><img src="/blogs/longju-dev/blogs/2020/01/29/postName/20190919141244387.png" alt="img"></p>
 <p>选择Primary在回车</p>
-<p><img src="/blogs/longju-dev/blogs/2020/01/29/postName/GitHub/blogs1/source/_posts/postName/20190919141313168.png" alt="img"></p>
+<p><img src="/blogs/longju-dev/blogs/2020/01/29/postName/20190919141313168.png" alt="img"></p>
 <p>保持默认直接回车</p>
-<p><img src="/blogs/longju-dev/blogs/2020/01/29/postName/GitHub/blogs1/source/_posts/postName/20190919141347389.png" alt="img"></p>
+<p><img src="/blogs/longju-dev/blogs/2020/01/29/postName/20190919141347389.png" alt="img"></p>
 <p>新建了主分区后需要激活分区才能启动，也就是写磁盘引导信息，选择“Bootable”然后回车。“sda1”的Flags就是“Boot”。</p>
-<p><img src="/blogs/longju-dev/blogs/2020/01/29/postName/GitHub/blogs1/source/_posts/postName/20190919141517271.png" alt="img"></p>
+<p><img src="/blogs/longju-dev/blogs/2020/01/29/postName/20190919141517271.png" alt="img"></p>
 <p>选择Write在回车</p>
-<p><img src="/blogs/longju-dev/blogs/2020/01/29/postName/GitHub/blogs1/source/_posts/postName/20190919141558843.png" alt="img"></p>
+<p><img src="/blogs/longju-dev/blogs/2020/01/29/postName/20190919141558843.png" alt="img"></p>
 <p>输入yes在回车</p>
-<p><img src="/blogs/longju-dev/blogs/2020/01/29/postName/GitHub/blogs1/source/_posts/postName/20190919141622956.png" alt="img"></p>
+<p><img src="/blogs/longju-dev/blogs/2020/01/29/postName/20190919141622956.png" alt="img"></p>
 <p>然后选中“Quit”然后回车，退出分区</p>
-<p><img src="/blogs/longju-dev/blogs/2020/01/29/postName/GitHub/blogs1/source/_posts/postName/20190919141644934.png" alt="img"></p>
+<p><img src="/blogs/longju-dev/blogs/2020/01/29/postName/20190919141644934.png" alt="img"></p>
 <p>选择 “sda1”,即第一块硬盘的第一个分区，然后用“Tab”键选中“OK” 后回车</p>
-<p><img src="/blogs/longju-dev/blogs/2020/01/29/postName/GitHub/blogs1/source/_posts/postName/20190919141719106.png" alt="img"></p>
+<p><img src="/blogs/longju-dev/blogs/2020/01/29/postName/20190919141719106.png" alt="img"></p>
 <p>这一步安装程序要我们选择要格式化的文件系统类型，选择ETX4，选OK回车下一步</p>
-<p><img src="/blogs/longju-dev/blogs/2020/01/29/postName/GitHub/blogs1/source/_posts/postName/20190919141739235.png" alt="img"></p>
+<p><img src="/blogs/longju-dev/blogs/2020/01/29/postName/20190919141739235.png" alt="img"></p>
 <p>选择Yes，回车</p>
-<p><img src="/blogs/longju-dev/blogs/2020/01/29/postName/GitHub/blogs1/source/_posts/postName/20190919141801192.png" alt="img"></p>
+<p><img src="/blogs/longju-dev/blogs/2020/01/29/postName/20190919141801192.png" alt="img"></p>
 <p>选择Yes，回车</p>
-<p><img src="/blogs/longju-dev/blogs/2020/01/29/postName/GitHub/blogs1/source/_posts/postName/20190919141821399.png" alt="img"></p>
+<p><img src="/blogs/longju-dev/blogs/2020/01/29/postName/20190919141821399.png" alt="img"></p>
 <p>选择Yes，回车</p>
-<p><img src="/blogs/longju-dev/blogs/2020/01/29/postName/GitHub/blogs1/source/_posts/postName/20190919141842308.png" alt="img"></p>
+<p><img src="/blogs/longju-dev/blogs/2020/01/29/postName/20190919141842308.png" alt="img"></p>
 <p>接下来会自动安装系统，直到安装完成，我们选择重启即可</p>
-<p><img src="/blogs/longju-dev/blogs/2020/01/29/postName/GitHub/blogs1/source/_posts/postName/20190919141900945.png" alt="img"></p>
+<p><img src="/blogs/longju-dev/blogs/2020/01/29/postName/20190919141900945.png" alt="img"></p>
 <p>其实系统已经安装完成，但是我们发现重启之后是进不了系统的，出现黑屏，或者以下这种提示</p>
-<p><img src="/blogs/longju-dev/blogs/2020/01/29/postName/GitHub/blogs1/source/_posts/postName/20190919141922907.png" alt="img"></p>
+<p><img src="/blogs/longju-dev/blogs/2020/01/29/postName/20190919141922907.png" alt="img"></p>
 <p>所以我们还需要进一步设置，需要先关闭虚拟机，之后在开机，开机选择第二项回车，进入debug模式</p>
-<p><img src="/blogs/longju-dev/blogs/2020/01/29/postName/GitHub/blogs1/source/_posts/postName/20190919141957658.png" alt="img"></p>
+<p><img src="/blogs/longju-dev/blogs/2020/01/29/postName/20190919141957658.png" alt="img"></p>
 <p>回车输入才下命令，以 RW 模式重新挂载分区</p>
 <p>mount -o remount,rw /mnt</p>
-<p><img src="/blogs/longju-dev/blogs/2020/01/29/postName/GitHub/blogs1/source/_posts/postName/20190919142150723.png" alt="img"></p>
+<p><img src="/blogs/longju-dev/blogs/2020/01/29/postName/20190919142150723.png" alt="img"></p>
 <p>编辑文件：</p>
 <p>vi /mnt/grub/menu.lst</p>
-<p><img src="/blogs/longju-dev/blogs/2020/01/29/postName/GitHub/blogs1/source/_posts/postName/20190919142258115.png" alt="img"></p>
+<p><img src="/blogs/longju-dev/blogs/2020/01/29/postName/20190919142258115.png" alt="img"></p>
 <p>按i，进入编辑模式，在第一个启动项，quiet后面加入nomodeset，如图：</p>
-<p><img src="/blogs/longju-dev/blogs/2020/01/29/postName/GitHub/blogs1/source/_posts/postName/2019091914232413.png" alt="img"></p>
+<p><img src="/blogs/longju-dev/blogs/2020/01/29/postName/2019091914232413.png" alt="img"></p>
 <p>nomodeset不加载任何显卡驱动模式</p>
 <p>按esc键取消编辑模式，输入：wq回车保存并退出，重启虚拟机即可。</p>
 <p>重启之后就可以进入系统了。</p>
